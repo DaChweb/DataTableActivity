@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>DanielZelada</title>
+
+</head>
+<body>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th class="table-secondary">Platillo</th>
+                <th class="table-primary">País de Origen</th>
+                <th class="table-primary">Receta</th>
+                <th class="table-primary">Opciones de compra</th>
+                <th class="table-primary">Opciones</th>
+            </tr>
+        </thead>
+        
+        <tbody class="table-group-divider">
+            <tr>
+                <td>
+                    <figure class="figure">
+                        <img src="Imagen/pupusas.jpg" width="300px" class="figure-img img-fluid rounded">
+                        <figcaption class="figure-caption">Pupusas</figcaption>
+                    </figure>
+
+                </td>
+                <td>El Salvador</td>
+                <td>
+                    <span class="badge rounded-pill text-bg-success"><i class="bi bi-receipt" style="font-size: 0.9rem; color:rgb(243, 190, 77)" onclick="pupusas()">Ingredientes</i></span></td>
+                <td>
+                    <span class="badge text-bg-warning"><i class="bi bi-geo-alt-fill" style="font-size: 1rem"></i> Comer acá</span>
+                    <span class="badge text-bg-warning"><i class="bi bi-cart3" style="font-size: 1rem"></i> Llevar</span></td>
+                <td>
+                    <button class="btn btn-secondary">
+                        <i class="bi bi-plus-square" style="font-size: 1rem; color: aliceblue;"></i>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="bi bi-x-square" style="font-size: 1rem; color: aliceblue;"></i>
+                    </button>
+                </td>
+            </tr>
+
+            <tr class="table-group-divider">
+                <td>
+                    <figure class="figure">
+                        <img src="Imagen/tamal.jpg" width="300px" class="figure-img img-fluid rounded" alt="Imagen de Empleada Lilian">
+                        <figcaption class="figure-caption">Tamal de maiz</figcaption>
+                    </figure>
+
+                </td>
+                <td>El Salvador</td>
+                <td>
+                    <span class="badge rounded-pill text-bg-success"><i class="bi bi-receipt" style="font-size: 0.9rem; color:rgb(243, 190, 77)" onclick="tamal()">Ingredientes</i></span></td>
+                <td>
+                    <span class="badge text-bg-warning"><i class="bi bi-geo-alt-fill" style="font-size: 1rem"></i> Comer acá</span>
+                    <span class="badge text-bg-warning"><i class="bi bi-cart3" style="font-size: 1rem"></i> Llevar</span></td>
+                <td>
+                    <button class="btn btn-secondary">
+                        <i class="bi bi-plus-square" style="font-size: 1rem; color: aliceblue"></i>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="bi bi-x-square" style="font-size: 1rem; color: aliceblue"></i>
+                    </button>
+                </td>
+            </tr>
+
+            <tr class="table-group-divider">
+                <td>
+                    <figure class="figure">
+                        <img src="Imagen/atol.jpg" width="300px" class="figure-img img-fluid rounded" alt="Imagen de Empleada Lilian">
+                        <figcaption class="figure-caption">Atol shuco</figcaption>
+                    </figure>
+
+                </td>
+                <td>El Salvador</td>
+                <td>
+                    <span class="badge rounded-pill text-bg-success"><i class="bi bi-receipt" style="font-size: 0.9rem; color:rgb(243, 190, 77)" onclick="shuco()">Ingredientes</i></span></td>
+                <td>
+                    <span class="badge text-bg-warning"><i class="bi bi-geo-alt-fill" style="font-size: 1rem"></i> Comer acá</span>
+                    <span class="badge text-bg-warning"><i class="bi bi-cart3" style="font-size: 1rem;"></i> Llevar</span></td>
+                <td>
+                    <button class="btn btn-secondary">
+                        <i class="bi bi-plus-square"  style="font-size: 1rem; color: aliceblue"></i>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="bi bi-x-square" style="font-size: 1rem; color: aliceblue"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+
+    <!-- <tfoot>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th> 
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>        
+    </table> -->
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Mensajes de alerta Ingredientes -->
+<script>
+        function pupusas() {
+            Swal.fire({
+                title: 'Pupusas',
+                html: 
+                    '1 libra de harina <br>' +
+                    '1/2 libra de quesillo <br>' +
+                    '3 tazas de agua <br>' +
+                    '1/4 de frijol molido', 
+
+                imageUrl: 'Imagen/restaurant.png',
+                imageWidth: 100,
+
+                showCloseButton: true,
+                showCancelButton: true,
+                focusConfirm: false,
+                confirmButtonText:
+                    'Util',
+                cancelButtonText:
+                    'No util',         
+                }) 
+        }
+
+        function tamal() {
+            Swal.fire({
+                title: 'Tamal',                
+                imageUrl: 'Imagen/restaurant.png',
+                imageWidth: 100,                
+
+                html:
+                '10 elotes <br>' +
+                '120 gr de leche <br>' +
+                '60 gr de azúcar <br>' +
+                '1 cuchara de sal <br>' +
+                '200 gr de margarina derretida <br>',
+                                      
+                showCloseButton: true,
+                showCancelButton: true,
+                focusConfirm: false,
+                confirmButtonText:
+                    'Util',
+                cancelButtonText:
+                    'No util',       
+                })  
+        }
+
+        function shuco() {
+            Swal.fire({
+                title: 'Shuco',               
+                imageUrl: 'Imagen/restaurant.png',
+                imageWidth: 100,                
+                imageAlt: 'Informació de Unidad',
+                html:
+                    '2 lb de maíz morado o negro <br>' +
+                    'Frijoles cocidos enteros <br>' +
+                    'Alguashte en agua <br>' +
+                    'Chile picante <br>' +
+                    'Sal al gusto <br>',
+
+                showCloseButton: true,
+                showCancelButton: true,
+                focusConfirm: false,
+                confirmButtonText:
+                    'Util',
+                cancelButtonText:
+                    'No util',
+                })
+        }
+
+</script>
+
+</html>
